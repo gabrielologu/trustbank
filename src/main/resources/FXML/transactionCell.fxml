@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="69.0" prefWidth="600.0" styleClass="cell-container" stylesheets="@../Styles/transactioncell.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox alignment="CENTER" layoutX="14.0" layoutY="11.0" prefHeight="26.0" prefWidth="45.0" styleClass="cell-container" stylesheets="@../Styles/transactioncell.css">
+        <FontAwesomeIconView fx:id="in_icon" glyphName="LONG_ARROW_LEFT" size="25" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="26.14285659790039" />
+        <FontAwesomeIconView fx:id="out_icon" glyphName="LONG_ARROW_RIGHT" size="25" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="26.0" />
+    </VBox>
+    <Label fx:id="transaction_date" layoutX="87.0" layoutY="28.0" prefHeight="17.0" prefWidth="79.0" styleClass="trans-date-lbl" text="2024-05-05" AnchorPane.leftAnchor="87.0" />
+    <Label fx:id="lastname_sender_lbl" layoutX="359.0" layoutY="27.0" prefHeight="17.0" prefWidth="79.0" styleClass="trans-pAddress-lbl" text="Ologu" AnchorPane.leftAnchor="359.0" />
+    <Label fx:id="firstname_sender_lbl" layoutX="191.0" layoutY="27.0" prefHeight="17.0" prefWidth="106.0" styleClass="trans-pAddress-lbl" text="Gabriel" AnchorPane.leftAnchor="191.0" />
+    <Line endY="57.0" layoutX="300.0" layoutY="-6.0" startY="28.0" AnchorPane.leftAnchor="299.5" />
+    <Label fx:id="amount_transfered_lbl" layoutX="528.0" layoutY="22.0" prefHeight="30.0" prefWidth="58.0" styleClass="trans-amount-lbl" text="\$2.000.0" AnchorPane.rightAnchor="14.0" />
+   <Button fx:id="bell_btn" layoutX="455.0" layoutY="20.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="37.0" styleClass="bell_btn" textOverrun="CLIP">
+      <graphic>
+         <FontAwesomeIconView glyphName="BELL_ALT" selectionFill="BLACK" selectionStart="0" size="16" />
+      </graphic></Button>
+</AnchorPane>

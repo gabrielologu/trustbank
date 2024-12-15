@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="446.0" prefWidth="692.0" styleClass="login-container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.HelloController">
+   <VBox prefHeight="502.0" prefWidth="224.0" styleClass="login-logo-container" stylesheets="@../Styles/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FontAwesomeIconView glyphName="BANK" size="40" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="44.279296875">
+         <VBox.margin>
+            <Insets top="-10.0" />
+         </VBox.margin>
+      </FontAwesomeIconView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Trust Bank" wrappingWidth="125.61599731445312">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Text>
+   </VBox>
+   <VBox layoutX="245.0" layoutY="24.0" prefHeight="462.0" prefWidth="558.0" styleClass="login-form-container" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="245.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Label fx:id="choose_account_label" prefHeight="30.0" prefWidth="173.0" text="Choose Your Account Type:" />
+      <ChoiceBox fx:id="acc_selector" prefHeight="30.0" prefWidth="78.0" styleClass="account-selector" />
+      <Label fx:id="payee_address_label" prefHeight="30.0" prefWidth="94.0" text="Payee Address:" />
+      <TextField fx:id="payee_address" prefHeight="30.0" prefWidth="427.0" styleClass="input-field" />
+      <Label fx:id="password_label" prefHeight="30.0" prefWidth="63.0" text="Password:" />
+      <PasswordField fx:id="password_input" prefHeight="30.0" prefWidth="427.0" styleClass="input-field" />
+      <Button fx:id="login_button" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="14.0" lineSpacing="10.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="26.0" prefWidth="427.0" text="Login" textAlignment="CENTER">
+         <effect>
+            <Bloom threshold="0.97" />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Label fx:id="error_display" prefHeight="30.0" prefWidth="305.0" styleClass="error-label" />
+   </VBox>
+</AnchorPane>

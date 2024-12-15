@@ -1,0 +1,55 @@
+.container-accounts {
+    -fx-background-color: #EEEEEE;
+
+}
+
+.container-accounts Text{
+    -fx-fill: #888888;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+}
+
+.container-accounts Label{
+
+}
+
+.container-accounts VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #888888;
+    -fx-padding:10;
+    -fx-spacing:15;
+}
+.container-accounts VBox Text {
+    -fx-font-size:1.2em;
+}
+
+.container-accounts VBox Label {
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-padding: 2 0 2 0;
+}
+
+.container-accounts TextField {
+    -fx-pref-width: 230;
+    -fx-pref-height: 35;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3,0,0,3);
+}
+
+.container-accounts Button {
+    -fx-background-color: linear-gradient(to right, #132A2B, #253F25);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3,0,0,3);
+    -fx-pref-width: 230;
+    -fx-font-size: 1.5em;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+}
+
+.container-account Button:hover {
+    -fx-cursor: pointer;
+}
+
+.move-funds-text {
+    -fx-fill: #888888;
+    -fx-font-size: 1.4em;
+}
