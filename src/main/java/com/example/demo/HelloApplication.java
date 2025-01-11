@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 // MAIN APP
+// make sure you are using -cp demo on the build and run configuration
 
 public class HelloApplication extends Application {
     @Override
